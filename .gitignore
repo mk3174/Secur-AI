@@ -1,0 +1,8 @@
+# Generated tailored resumes (contain personal data)
+output/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env

@@ -1,0 +1,12 @@
+---
+description: Trigger the resume tailoring workflow whenever a job description is pasted or the user asks to tailor, trim, or ATS-optimize a resume.
+alwaysApply: true
+---
+
+When the user pastes a job description or asks to tailor / trim / optimize / update a resume for a role:
+
+- Read and follow `.cursor/skills/resume-tailor/SKILL.md` before doing anything else.
+- The ATS system prompt is `prompts/system_prompt.md`. Use it verbatim; do not rewrite or summarize it.
+- Always use Claude Opus 5.5 for the resume rewrite (`claude-opus-5-5` via the CLI, or a `claude-opus-5-5-high` subagent when no API key is available).
+- Search the user's Downloads folder (plus `resumes/`) for the highest-scoring resume against the JD before tailoring, unless the user points to a specific file.
+- Never invent employers, job titles, dates, or degrees.
