@@ -24,11 +24,41 @@ solutions products clearly document ease maintainability others participate disc
 critical curate consume accelerate how build building test testing debug knowledge like basics designing implementing
 vs one scripting language languages technologies such programs programs development deployment design
 data tools foundations fire tv pipelines systems services workflows mechanisms issues trade offs owned own
+developer enhance hands-on integrate applications application software platforms calling function tool skill
+specializing intelligent ideal background titles look candidates enterprise powered ai-powered production-grade
 """.split()
 )
 
 # Multi-word technical phrases recognised as a single keyword. Lower-case, longest-first matching.
 TECH_PHRASES = [
+    "model context protocol",
+    "mcp servers",
+    "mcp clients",
+    "agentic ai",
+    "ai agents",
+    "ai engineering",
+    "tool calling",
+    "function calling",
+    "multi-step workflows",
+    "workflow automation",
+    "intelligent automation",
+    "retrieval-augmented generation",
+    "vector databases",
+    "vector search",
+    "semantic search",
+    "knowledge retrieval",
+    "database operations",
+    "database monitoring",
+    "performance analysis",
+    "incident management",
+    "production readiness",
+    "enterprise integrations",
+    "api integrations",
+    "aws bedrock",
+    "google gemini",
+    "microsoft ai",
+    "azure openai",
+    "aws rds",
     "self-service analytics",
     "conversational analytics",
     "agentic analytics",
@@ -152,6 +182,7 @@ airflow dbt snowflake bigquery databricks synapse redshift fivetran stitch infor
 postgresql postgres mysql oracle mariadb sqlite mssql mongodb cassandra redis elasticsearch opensearch neo4j
 tableau looker quicksight powerbi superset metabase excel pandas numpy scipy scikit-learn sklearn tensorflow pytorch keras
 xgboost mlflow sagemaker bedrock openai anthropic claude langchain llamaindex rag llm llms genai agentic copilot cursor
+n8n mcp gemini langgraph crewai autogen embeddings pinecone weaviate chroma chromadb faiss pgvector qdrant milvus zapier
 etl elt olap oltp warehouse lakehouse parquet avro orc json xml csv yaml api apis grpc graphql rest
 jira confluence agile scrum kanban ci/cd devops dataops mlops sre
 iam oauth saml sso siem soc nist iso soc2 gdpr ccpa hipaa pci sox encryption tls
@@ -211,6 +242,18 @@ SYNONYMS: dict[str, list[str]] = {
     "kornshell": ["ksh", "shell scripting", "bash"],
     "scripting language": ["python", "bash", "shell"],
     "machine learning": ["ml"],
+    "model context protocol": ["mcp"],
+    "mcp servers": ["mcp server"],
+    "mcp clients": ["mcp client"],
+    "retrieval-augmented generation": ["rag", "retrieval augmented generation"],
+    "rag": ["retrieval-augmented generation"],
+    "vector databases": ["vector database", "pgvector", "pinecone", "faiss", "chromadb", "weaviate"],
+    "ai agents": ["ai agent", "llm agents", "agents"],
+    "aws bedrock": ["amazon bedrock", "bedrock"],
+    "google gemini": ["gemini"],
+    "rest apis": ["rest api", "restful apis", "restful api"],
+    "aws rds": ["amazon rds", "rds"],
+    "multi-step workflows": ["multi-step workflow", "multistep workflows"],
     "sql": ["sql"],
 }
 
